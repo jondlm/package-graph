@@ -1,0 +1,7 @@
+{
+  "name": "@pg1/iron-gearwheel",
+  "version": "2.0.0",
+  "dependencies": {
+    "@pg1/iron-plate": "^2.0.0"
+  }
+}

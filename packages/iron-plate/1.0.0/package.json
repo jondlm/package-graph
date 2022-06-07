@@ -1,0 +1,7 @@
+{
+  "name": "@pg1/iron-plate",
+  "version": "1.0.0",
+  "dependencies": {
+    "@pg1/iron-ore": "^1.0.0"
+  }
+}
