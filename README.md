@@ -5,7 +5,10 @@ package managers. It's a directed acyclic graph (DAG) of packages with no
 actual code. The value is in the relationship of the packages and various
 published semver versions.
 
-The packages are published on public npm under the `@pg1` scope.
+The packages are published on public npm under the `@pg1` scope. For example:
+```
+npm add @pg1/iron-plate
+```
 
 ```mermaid
 graph LR
