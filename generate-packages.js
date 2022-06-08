@@ -58,6 +58,15 @@ const permutations = [
   ["cc", "2.0.0", "cp", "^2.0.0"],
   ["cp", "2.0.0", "co", "^2.0.0"],
   ["wc", "2.0.0", "w", "^2.0.0"],
+
+  // Special 3.x cases
+  ["cc", "3.0.0", "cp", "^3.0.0"],
+  ["cp", "3.0.0", "co", "^3.0.0"],
+
+  ["cc", "3.1.0", "cp", "^3.1.0"],
+  ["cp", "3.1.0", "co", "^3.0.0"],
+
+  ["co", "3.1.0"],
 ];
 
 // Maintain a list of fs operations that we defer to the end. We do this to
@@ -73,6 +82,20 @@ const operations = {};
 const relPath = (...p) => path.join(__dirname, "packages", ...p);
 
 for (let tuple of permutations) {
+  // Special case for a package with no deps
+  if (tuple.length === 2) {
+    const [id, version] = tuple;
+
+    const name = packages[id];
+
+    assert(name);
+
+    set(operations, [name, version, "name"], `${scope}/${name}`);
+    set(operations, [name, version, "version"], version);
+
+    continue;
+  }
+
   const [child, childVer, parent, spec] = tuple;
 
   const childName = packages[child];

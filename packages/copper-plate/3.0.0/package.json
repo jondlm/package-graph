@@ -1,0 +1,7 @@
+{
+  "name": "@pg1/copper-plate",
+  "version": "3.0.0",
+  "dependencies": {
+    "@pg1/copper-ore": "^3.0.0"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@pg1/copper-plate": "^3.0.0"
+  },
+  "name": "@pg1/copper-cable",
+  "version": "3.0.0"
+}
