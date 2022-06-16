@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@pg1/iron-plate": "^1.1.0"
+  },
+  "name": "@pg1/iron-stick",
+  "version": "1.1.0"
+}

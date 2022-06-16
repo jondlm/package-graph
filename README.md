@@ -20,6 +20,7 @@ graph LR
   ig(iron-gearwheel)
   io(iron-ore)
   ip(iron-plate)
+  is(iron-stick)
   w(wood)
   wc(wooden-chest)
 
@@ -28,6 +29,7 @@ graph LR
   am1 --> ip
   ig --> ip
   ip --> io
+  is --> ip
   ec --> cc
   cc --> cp
   cp --> co
