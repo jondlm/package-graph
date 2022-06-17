@@ -38,6 +38,7 @@ const permutations = [
 
   // Omitting the `^` here for testing
   ["wc", "1.0.1", "w", "1.0.0"],
+  ["is", "1.0.1", "ip", "1.0.0"],
 
   // All 1.1.0
   ["am1", "1.1.0", "ec", "^1.1.0"],
